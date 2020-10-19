@@ -26,4 +26,8 @@ class BandersonPalindromeTest < Minitest::Test
     assert 12321.palindrome?
   end
 
+  def test_blank_string
+    refute "   ".palindrome?
+  end
+
 end
